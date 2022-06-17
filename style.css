@@ -7,23 +7,28 @@
 /*html padding and margin reset*/
 *{
     padding: 0;
-    margin: 0;
-    font:inherit;
+    margin: 0;   
 }
+/*body and document font formatting*/
 body{
     background: linear-gradient(150.03deg, #FFFFFF 0%, #FFF4F4 84.51%);
     display: flex;
     flex-flow: column;
     justify-content: center;
+    font-size: 16px;
+    height: 100vh;
+    color: var(--desaturated-red);
+    font-family: 'Josefin Sans', sans-serif;
 }
+/*hero img and logo formatting*/
 .logo{
-    width: 100px;
-    height: 21px;
-    margin: 32px;
+    width: 6.25rem;
+    height: 1.3rem;
+    margin: 2rem;
 }
 .image-container{
     width: 100%;
-    height: 250px;
+    height: 15.6rem;
     background-color: var(--soft-red);
 }
 .image-container img{
@@ -32,13 +37,80 @@ body{
     object-fit: cover;
     opacity: 0.9;
 }
+/*content formatting*/
 .content-wrapper{
     display: flex;
     flex-flow: column;
     align-items: center;
+    justify-content: center;
+}
+.content-wrapper h1{
+    font-size: 2.5rem;
+    line-height: 2.6rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-top: 4rem;
+    text-align: center;
+    width: 20rem;
+    letter-spacing: 1rem;
+}
+.content-wrapper span{
+    color: black;
+    font-weight: 600;
+}
+.description{
+    margin: 1rem;
+    text-align: center;
+    line-height: 1.4rem;
+    max-width: 20rem;
+    
+}
+/*input and button formatting*/
+input{
+    padding: 0.9rem;
+    width: 20rem;
+    border-radius: 1.75rem;
+   background-color: transparent;
+    border: 0.125rem solid var(--desaturated-red);
+}
+::placeholder{
+    font:inherit;
+    color: var(--desaturated-red);
+}
+.btn-share{
+    width: 4rem;
+    height: 3rem;
+    background: linear-gradient(135deg, #F8BFBF 0%, #EE8B8B 100%);
+    box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569);
+    border: none;
+    border-radius: 1.75rem;
+    position: relative;
+    transform: translate(225%, -100%);
+}
+.btn-share:hover{
+    background: var(--soft-red);
+    cursor: pointer;
+}
+/*error formatting*/
+.error-sign{
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    transform: translate(350%, 510%);
+}
+.error{
+    color: var(--soft-red);
+    position: relative;
+    transform: translate(-30%, -250%);
+}
+.active{
+    border: 0.125rem solid var(--soft-red);
+}
+.hide{
+    display:none;
 }
 .attribution {
-  font-size: 11px;
+  font-size: 0.8rem;
   text-align: center;
 }
 .attribution a {
