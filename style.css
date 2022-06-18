@@ -17,11 +17,12 @@ body{
     justify-content: center;
     font-size: 16px;
     height: 100vh;
+    width: 100%;
     color: var(--desaturated-red);
     font-family: 'Josefin Sans', sans-serif;
 }
 /*hero img and logo formatting*/
-.logo{
+.logo-mobile{
     width: 6.25rem;
     height: 1.3rem;
     margin: 2rem;
@@ -51,7 +52,7 @@ body{
     text-transform: uppercase;
     margin-top: 4rem;
     text-align: center;
-    width: 20rem;
+    max-width:  20rem;
     letter-spacing: 1rem;
 }
 .content-wrapper span{
@@ -110,10 +111,110 @@ input{
     display:none;
 }
 .attribution {
-  font-size: 0.8rem;
+  font-size: 0.5rem;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+.women-desktop{
+    display: none;
+}
+.logo-desktop{
+    display: none;
+}
+
+@media only screen and (min-width: 800px){
+    /*body and document font formatting*/
+body{
+    background: linear-gradient(150.03deg, #FFFFFF 0%, #FFF4F4 84.51%);
+    display: flex;
+    flex-flow: row;
+    justify-content:space-between;
+    font-size: 16px;
+    height: 100vh;
+    width: 100vw;
+    color: var(--desaturated-red);
+    font-family: 'Josefin Sans', sans-serif;
+}
+/*hero img and logo formatting*/
+.logo-desktop{
+    display: block;
+    width: 10rem;
+    height: 2rem;
+    margin-top: 4.6rem ;
+    
+}
+.logo-mobile{
+    display: none;
+}
+
+.women-desktop{
+    display:block;
+    
+}
+.women-mobile{
+    display: none;
+}
+.image-container{
+    display: none;
+}
+/*content formatting*/
+.content-wrapper{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 10rem;
+}
+
+.content-wrapper h1{
+    font-size: 4rem;
+    line-height: 4.4rem;
+    
+    
+    text-align: left;
+    max-width:  28rem;
+    letter-spacing: 1rem;
+    margin-top: 8.5rem ;
+    
+}
+.content-wrapper span{
+    color: black;
+    font-weight: 600;
+}
+.description{
+    margin: 2rem 0 2rem 0;
+    text-align: left;
+    line-height: 1.4rem;
+    max-width: 28rem;
+    
+}
+/*input and button formatting*/
+input{
+    padding: 0.9rem;
+    width: 28rem;
+}
+
+.btn-share{
+    width: 5rem;
+    transform: translate(500%, -100%);
+}
+
+/*error formatting*/
+.error-sign{
+    transform: translate(1500%, 2470%);
+}
+.error{
+    color: var(--soft-red);
+    position: relative;
+    transform: translate(10%, -200%);
+}
+
+.hide{
+    display:none;
+}
+footer{
+    display: none;
 }
 
