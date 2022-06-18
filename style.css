@@ -21,6 +21,8 @@ body{
     color: var(--desaturated-red);
     font-family: 'Josefin Sans', sans-serif;
 }
+
+
 /*hero img and logo formatting*/
 .logo-mobile{
     width: 6.25rem;
